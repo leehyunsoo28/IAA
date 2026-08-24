@@ -1,39 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>HISTIORY ARCHIVE</title>
-        <link rel="stylesheet" href="css/default.css">
-    </head>
-    <body>
-        
-        <div id="header">
-            <div class="inner">
-                <a href="#" class="logo">HISTORY<span>ARCHIVE</span></a>
-                <div class="header_search">
-                    <input id="HeaderSearchInput" placeholder="사건, 키워드를 검색해주세요.">
-                    <button id="HeaderSearchButton" >⌕</button>
-                </div>
-            </div>
-        </div>
-        
-        <div id="visual">
-            <div class="inner">
-               <div class="visual_p">
-                    <p class="eyebrow">2000~2025</p>
-                    <h1>우리가 지나온<br><strong>사건들을 기록합니다.</strong></h1>
-                    <p class="description">날짜와 시간의 흐름을 따라 지난 사건들을 탐색해보세요.</p>
-               </div>
-               <div class="visual_search">
-                    <input id="VisualSearchInput" placeholder="사건, 키워드를 검색해주세요.">
-                    <button id="VisualSearchButton" >검색</button>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        
-        <script src="js/default.js"></script>
-    </body>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>History Archive</title>
+<link rel="stylesheet" href="css/default.css">
+</head>
+  
+  
+<body>
+  
+<header class="header">
+  <div class="header-inner">
+    <a class="logo" href="#">HISTORY<span>ARCHIVE</span></a>
+    <div class="header-search">
+      <input id="searchInput" placeholder="사건, 키워드를 검색하세요">
+      <button id="searchButton">⌕</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  
+<section class="hero">
+  <p class="eyebrow">2000 — 2025</p>
+  <h1>우리가 지나온<br><strong>사건들을 기록합니다.</strong></h1>
+  <p class="description">날짜와 시간의 흐름을 따라 지난 사건들을 탐색해보세요.</p>
+  <div class="main-search">
+    <input id="mainSearchInput" placeholder="사건, 인물, 키워드를 검색하세요">
+    <button id="mainSearchButton">검색</button>
+  </div>
+</section>
+
+
+<section class="timeline-section">
+  <div class="section-header">
+    <div>
+      <p class="eyebrow">TIMELINE</p>
+      <h2>연도를 선택하세요</h2>
+    </div>
+    <div class="year-control">
+      <button id="prevYear" class="arrow">←</button>
+      <div id="yearList" class="year-list"></div>
+      <button id="nextYear" class="arrow">→</button>
+    </div>
+  </div>
+  
+  
+  <div class="selected-year"><span id="selectedYear">2014</span><small>년</small></div>
+  <div id="monthTimeline" class="month-timeline"></div>
+
+  <div class="events-area">
+    <div class="events-header">
+      <div>
+        <p class="eyebrow">EVENTS</p>
+        <h2><span id="eventYear">2014</span>년 주요 사건</h2>
+      </div>
+      <div class="event-count"><span id="eventCount">0</span> events</div>
+    </div>
+    <div id="eventList" class="event-list"></div>
+  </div>
+</section>
+</main>
+  
+  
+
+<div id="detailSection" class="detail-overlay">
+  <article class="detail-card">
+    <button id="closeDetail" class="close">×</button>
+    <p id="detailDate" class="detail-date"></p>
+    <h2 id="detailTitle"></h2>
+    <div class="detail-meta"><span id="detailCountry"></span><span id="detailCategory"></span></div>
+    <hr>
+    <h3>사건 개요</h3>
+    <p id="detailDescription"></p>
+    <hr>
+    <h3>키워드</h3>
+    <div id="detailKeywords" class="keywords"></div>
+    <hr>
+    <h3>출처</h3>
+    <p class="muted">프로토타입에서는 샘플 출처 영역입니다.</p>
+  </article>
+</div>
+
+    
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="logo">HISTORY<span>ARCHIVE</span></div>
+    <p>Prototype · 2000 — 2025</p>
+  </div>
+</footer>
+
+<script src="js/default.js"></script>
+</body>
 </html>
