@@ -2,13 +2,15 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>History Archive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History Archive — Prototype</title>
 <link rel="stylesheet" href="css/default.css">
 </head>
   
   
 <body>
   
+<!--헤더-->
 <header class="header">
   <div class="header-inner">
     <a class="logo" href="#">HISTORY<span>ARCHIVE</span></a>
@@ -21,8 +23,9 @@
 
 <main>
   
+<!--비주얼-->
 <section class="hero">
-  <p class="eyebrow">2000 — 2025</p>
+  <p class="eyebrow">2000 — 2026</p>
   <h1>우리가 지나온<br><strong>사건들을 기록합니다.</strong></h1>
   <p class="description">날짜와 시간의 흐름을 따라 지난 사건들을 탐색해보세요.</p>
   <div class="main-search">
@@ -31,7 +34,7 @@
   </div>
 </section>
 
-
+<!--컨텐츠1-->
 <section class="timeline-section">
   <div class="section-header">
     <div>
@@ -46,6 +49,8 @@
   </div>
   
   
+  
+<!--컨텐츠 2-->
   <div class="selected-year"><span id="selectedYear">2014</span><small>년</small></div>
   <div id="monthTimeline" class="month-timeline"></div>
 
@@ -63,7 +68,10 @@
 </main>
   
   
-
+  
+  
+  
+<!--보여주기-->
 <div id="detailSection" class="detail-overlay">
   <article class="detail-card">
     <button id="closeDetail" class="close">×</button>
@@ -81,16 +89,18 @@
     <p class="muted">프로토타입에서는 샘플 출처 영역입니다.</p>
   </article>
 </div>
-
-    
-
+  
+<!--푸터-->
 <footer class="footer">
   <div class="footer-inner">
     <div class="logo">HISTORY<span>ARCHIVE</span></div>
-    <p>Prototype · 2000 — 2025</p>
+    <p>Prototype · 2000 — 2026</p>
   </div>
 </footer>
-
+  
+  
+<script src="js/data.js"></script>
 <script src="js/default.js"></script>
+
 </body>
 </html>
